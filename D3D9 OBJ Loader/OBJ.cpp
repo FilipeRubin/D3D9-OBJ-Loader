@@ -335,7 +335,7 @@ OBJ::OBJ(IDirect3DDevice9* pd3dDevice, const char* objfile, IDirect3DTexture9* p
 	delete[] normals;
 }
 
-OBJ::OBJ(IDirect3DDevice9* pd3dDevice, const char* objfile, const char* texturefile = nullptr)
+OBJ::OBJ(IDirect3DDevice9* pd3dDevice, const char* objfile, const char* texturefile)
 	:m_pd3dDevice(pd3dDevice), m_pVB(nullptr), m_pTexture(nullptr), m_info(OBJInfo())
 {
 	D3DXCreateTextureFromFile(pd3dDevice, texturefile, &m_pTexture);
