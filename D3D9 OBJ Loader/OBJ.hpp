@@ -1,6 +1,6 @@
 #pragma once
 
-#include "d3dx9.h" // Includes d3d9.h and windows.h
+#include <d3dx9.h> // Includes d3d9.h and windows.h
 
 struct OBJInfo
 {
