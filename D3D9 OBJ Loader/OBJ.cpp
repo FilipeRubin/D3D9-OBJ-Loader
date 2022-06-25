@@ -136,7 +136,7 @@ inline static void LoadPositions(std::fstream& file, OBJPos*& pos)
 
 			for (int i = 0; i < 3; i++)
 			{
-				pos[positionIndex][i] = convertedElem[i];
+				pos[positionIndex][i] = i == 0 ? -convertedElem[i] : convertedElem[i];
 			}
 			positionIndex++;
 
@@ -233,7 +233,7 @@ inline static void LoadNormals(std::fstream& file, OBJNormal*& normals)
 
 			for (int i = 0; i < 3; i++)
 			{
-				normals[positionIndex][i] = convertedElem[i];
+				normals[positionIndex][i] = i == 0 ? -convertedElem[i] : convertedElem[i];
 			}
 			positionIndex++;
 
