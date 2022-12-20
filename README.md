@@ -12,4 +12,4 @@ When you want to render your model you MUST call **OBJ::Render()** between **IDi
 # Notes
 This OBJ Loader supposes you didn't syntactically modified your .obj file, what this means is that you can't add spaces and/or other characters to crucial lines (the ones starting with 'v', 'vt', 'vn' and 'f').
 
-This OBJ Loader is very simple and its only purpose is to read vertexes and render them in the right order. You can't use or interact with groups, smooth shading, materials, etc.
+This OBJ Loader is very simple and its only purpose is to read vertexes and render them in the right order. You can't use or interact with objects, groups, smooth shading, materials, etc.
